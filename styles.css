@@ -15,7 +15,8 @@
 }
 
 header, section, aside, footer {
-    padding: 1rem 15vw;
+    min-height: 50vh;
+    padding: 3rem 15vw;
 }
 
 header, footer {
@@ -25,6 +26,7 @@ header, footer {
 
 header {
     flex-direction: column;
+    padding-top: 1rem;
 }
 
 header .links {
@@ -45,12 +47,13 @@ header .logo {
 header .brand {
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 .hero {
     color: #e5e7eb;
+    margin: auto 0;
     gap: 2rem;
-    padding: 3rem 0;
 }
 
 .hero h1 {
@@ -72,8 +75,44 @@ header .brand {
     max-width: 50%;
 }
 
+.hero h1, .hero p {
+    margin-bottom: 0.75rem;
+}
+
 .hero-image {
+    align-items: center;
     background-color: gray;
+    display: flex;
+    justify-content: center;
     max-width: 50%;
     flex-grow: 1;
+}
+
+.info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info h2 {
+    color: #1f2937;
+    font-size: 2.25rem;
+}
+
+.figures {
+    gap: 2rem;
+}
+
+figure .image {
+    aspect-ratio: 1/1;
+    border: 0.25rem #3882f6 solid;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+figcaption {
+    color: gray;
+    font-size: 0.75rem;
+    text-align: center;
 }
