@@ -14,7 +14,7 @@
     display: flex;
 }
 
-header, section, aside, footer {
+header, section, footer {
     min-height: 50vh;
     padding: 3rem 15vw;
 }
@@ -108,11 +108,16 @@ header .brand {
     gap: 2rem;
 }
 
+figure {
+    max-width: 200px;
+}
+
 figure .image {
     aspect-ratio: 1/1;
     border: 0.25rem #3882f6 solid;
     border-radius: 0.5rem;
-    margin-bottom: 0.5rem;
+    height: auto;
+    margin-bottom: 0.5rem
 }
 
 figcaption {
@@ -139,4 +144,39 @@ p.quote{
     color: #1f2937;
     font-size: 2.25rem;
     font-weight: lighter;
+}
+
+aside {
+    align-items: center;
+    padding: 10vw;
+}
+
+aside .action {
+    align-items: center;
+    background-color: #3882f6;
+    border-radius: 0.5rem;
+    flex-grow: 1;
+    min-height: 50%;
+    justify-content: space-between;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+aside .action h3 {
+    color: #f9faf8;
+    font-size: 1.5rem;
+}
+
+aside .action p, aside .action button {
+    color: #e5e7eb;
+    font-size: 1.125rem;
+}
+
+aside .action button {
+    background-color: #3882f6;
+    border: 0.2rem solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    flex: 0 0 auto;
+    padding: 0.25rem 2rem;
 }
