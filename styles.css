@@ -19,6 +19,10 @@ header, section, aside, footer {
     padding: 3rem 15vw;
 }
 
+footer {
+    min-height: auto;
+}
+
 header, footer {
     background-color: #1f2937;
     display: flex;
@@ -115,4 +119,24 @@ figcaption {
     color: gray;
     font-size: 0.75rem;
     text-align: center;
+}
+
+section.quote {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.client {
+    color: #1f2937;
+    font-weight: bold;
+    font-size: 1.125rem;
+    text-align: right;
+}
+
+p.quote{
+    color: #1f2937;
+    font-size: 2.25rem;
+    font-weight: lighter;
 }
